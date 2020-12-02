@@ -1,0 +1,273 @@
+html{
+--lumo-primary-color: rgb(21,161,271);
+--lumo-space-xs: 0;
+}
+
+
+.breadcrumb ol {
+    list-style: none;
+    display: flex;
+}
+
+.breadcrumb ol li {
+    padding-left: 5px;
+}
+
+.breadcrumb ol li {
+    /* padding-left: 5px; */
+    /* padding-right: 5px; */
+}
+
+.breadcrumb ol li a {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.main-menu-item a {
+    color: #666;
+}
+
+.main-menu-item a[highlight] {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-menu-item iron-icon {
+    margin: 5px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: #1abc9c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:  5px;
+}
+
+vaadin-horizontal-layout.header {
+    background-color: rgb(6,52,69);
+    box-shadow: 0px 1px 4px black;
+}
+
+.main-menu {
+    background-color: rgb(229,243,244);
+    z-index: 2;
+}
+.main-menu-item {
+    font-size: 1.5em;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgba(21,161,172,0.2);
+    box-shadow: 1px 1px 4px rgba(21,161,172,0.2);
+}
+
+.main-menu-item:hover {
+    background-color: rgba(21,161,172,0.3);
+}
+
+.avatar span {
+    font-weight: bold;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.avatar {
+    text-align: center;
+}
+
+.avatar:hover {
+    cursor: pointer;
+}
+
+.breadcrumb {
+    width: 100%;
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 7px;
+    /* border: 1px solid rgba(0,0,0,0.07); */
+}
+
+
+.breadcrumb ol li span {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.create-panel-btns {
+    border: 1px dashed rgb(215,219,225);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.create-panel {
+    align-items: center;
+}
+
+.create-panel span {
+    font-weight: bold;
+}
+
+.user-avatar span {
+    color: white;
+    font-weight: bold;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.user-avatar {
+    width: 200px;
+    height: 140px;
+}
+
+vaadin-context-menu-list-box.vaadin-menu-list-box {
+    border: none;
+    padding: 0;
+}
+
+.user-avatar {
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/*  Forsker Grand Prix specific */
+
+
+/*  Rule Editor */
+
+
+.drag-item {
+}
+
+.drag-item.moving {
+}
+
+.drag-item .drag-item-img {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+
+.drag-item .drag-item-title {
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.drag-item .drag-item-subtitle {
+}
+
+.drop-zone {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin: 1px;
+    border: 1px dashed #222222;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+.drop-zone.active {
+    background-color: rgba(0,200,0,0.5);
+    border: 2px solid green;
+}
+
+.drop-zone.forbidden {
+}
+
+.grid-container {
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.drop-zone-grid {
+    align-items: center;
+    justify-content: center;
+}
+
+.editor-menu {
+    --_lumo-grid-border-width: 0;
+}
+
+.tree-item-group {
+}
+
+.tree-item-group {
+
+}
+
+.tree-item-group img {
+}
+
+.tree-item-group span {
+    margin-left: 8px;
+}
+
+.tree-item-rule {
+}
+
+.tree-item-rule span {
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+
+.tree-item-btn {
+}
+
+.tree-item-object {
+}
+
+
+/*  Simulator */
+
+
+.world-simulator .grid {
+    align-items: center;
+    justify-content: center;
+}
+
+.world-simulator .context-menu img {
+    width: 60px;
+}
+
+.world-simulator .context-menu {
+    box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.75);
+    align-items: center;
+    justify-content: center;
+}
+
+.world-simulator .grid .cell {
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #222222;
+    border-radius: 3px;
+}
+
+.world-simulator .grid.small .cell {
+    width: 60px;
+    height: 60px;
+}
+
+.world-simulator .grid.medium .cell {
+    width: 30px;
+    height: 30px;
+}
+
+.world-simulator .grid.big .cell {
+    width: 16px;
+    height: 16px;
+}

@@ -1,0 +1,264 @@
+#diaged-canvas-container {
+    width: 100%;
+    height: 100%;
+}
+
+#diaged-canvas-container svg text {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*   */
+#diaged-palette {
+  position: absolute;
+  left: 20px;
+  top: 100px;
+  box-sizing: border-box;
+  width: 48px;
+  background: #FAFAFA;
+  border:solid 1px #CCC;
+  border-radius: 3px;
+}
+
+.palette-button {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  cursor: default;
+  float: left;
+  font-size: 30pt;
+  text-align: center;
+}
+.separator {
+  margin: 0 5px 2px 5px;
+  padding-top: 3px;
+  border: none;
+  border-bottom: solid 1px #CCC;
+  clear: both;
+}
+
+.draw-line {
+  cursor: crosshair;
+}
+
+.draw-line svg g rect:hover {
+  stroke: greenyellow;
+  cursor: crosshair;
+}
+
+#diaged-file-pane {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-top-right-radius: 4px;
+  text-align: center;
+  display: block;
+}
+
+
+#diaged-file-pane a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.file-path {
+  margin: 5px 5px;
+  text-align: center;
+
+}
+.file-pane-button {
+  text-align: center;
+  width: 30px;
+  font-size: 15pt;
+  border-left: 1px solid #CCC;
+  border-right:1px solid #CCC;
+  padding-bottom: 2px;
+}
+
+#diaged-file-pane div {
+  float: left;
+  padding-top: 5px;
+}
+#diaged-temp-pane div {
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  background-color: white;
+  opacity: 0.9;
+  z-index: 2;
+}
+#diaged-temp-pane div input {
+  width: 85%;
+  margin: 5pt auto;
+  opacity: 1;
+}
+
+#diaged-temp-pane .overlay-caption {
+  font-weight: bold;
+  border: none;
+  opacity: 1;
+  font-size: small;
+}
+
+.diaged-selected-element {
+  stroke-width: 3;
+  stroke: orange;
+  stroke-dasharray: 10,2;
+}
+.diaged-selected-element + rect {
+  stroke-width: 3;
+  stroke: orange;
+  stroke-dasharray: 10,2;
+}
+
+.diaged-node-contents table {
+  padding-top: 3px;
+}
+
+.diaged-node-contents table {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+
+.diaged-node-contents table tr td:hover {
+  cursor: text;
+}
+
+/* Review the following carefully */
+
+
+.overlay-tab {
+  width: 50%;
+	height: 40px;
+	background: #fdfdfd;
+	position: relative;
+	float: left;
+	z-index: 1;
+
+  -webkit-border-radius: 6px 6px 0 0;
+     -moz-border-radius: 6px 6px 0 0;
+          border-radius: 6px 6px 0 0;
+
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+
+	-webkit-box-shadow: 15px -15px 30px rgba(0,0,0,0.32);
+     -moz-box-shadow: 15px -15px 30px rgba(0,0,0,0.32);
+          box-shadow: 15px -15px 30px rgba(0,0,0,0.32);
+}
+
+.overlay-title {
+  width: 35%;
+	height: 40px;
+	position: absolute;
+	float: left;
+	z-index: 2;
+  margin: 0 10px;
+}
+
+.overlay-content {
+  position: relative;
+  top: -4px;
+  width: 320px;
+  background: #fdfdfd;
+  text-align: center;
+  overflow: hidden;
+  z-index: 2;
+
+  -webkit-border-top-right-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -moz-border-radius-bottomright: 6px;
+   border-top-right-radius: 6px;
+   border-bottom-left-radius: 6px;
+   border-bottom-right-radius: 6px;
+
+  -webkit-box-shadow: 15px 30px 30px rgba(0,0,0,0.32);
+     -moz-box-shadow: 15px 30px 30px rgba(0,0,0,0.32);
+          box-shadow: 15px 30px 30px rgba(0,0,0,0.32);
+}
+
+h2 {
+  font-size: 16px;
+	letter-spacing: -1px;
+  line-height: 20px;
+  color: #747474;
+	text-align: center;
+}
+
+.fieldset {
+      display: table;
+}
+
+.fieldset p {
+  box-sizing: border-box;
+    width: 100%;
+    display: inline-table;
+    padding: 5px 20px;
+    margin-bottom:2px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.fieldset label {
+	float: left;
+  width: 100%;
+	top: 0px;
+	color: #032942;
+	font-size: 13px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 1.5;
+}
+
+.fieldset input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    height: 32px;
+    padding: 0px 10px;
+    background-color: rgba(0,0,0,0.03);
+    border: none;
+    display: inline;
+    color: #303030;
+    font-size: 16px;
+    font-weight: 400;
+    float: left;
+
+    -webkit-box-shadow: inset 1px 1px 0px rgba(0,0,0,0.05), 1px 1px 0px rgba(255,255,255,1);
+    -moz-box-shadow: inset 1px 1px 0px rgba(0,0,0,0.05), 1px 1px 0px rgba(255,255,255,1);
+    box-shadow: inset 1px 1px 0px rgba(0,0,0,0.05), 1px 1px 0px rgba(255,255,255,1);
+}
+
+.fieldset input[type=submit]  {
+  width: 100%;
+  height: 48px;
+  margin-top: 24px;
+  padding: 0px 20px;
+  font-family: 'Quicksand', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	color: #fff;
+  line-height: 40px;
+  text-align: center;
+  background-color: #87314e;
+	border: 1px #87314e solid;
+	opacity: 1;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #df405a;
+  border: 1px #df405a solid;
+}
+
+input[type=submit]:focus {
+	outline: none;
+}
+
+.add-compartments {
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 4px #ccc;
+}
